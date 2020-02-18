@@ -17,7 +17,7 @@ use Cog\Contracts\Love\Reactable\Models\Reactable as ReactableContract;
 
 final class ReactableObserver
 {
-    public function created(
+    public function creating(
         ReactableContract $reactable
     ): void {
         if ($this->shouldRegisterAsReactantOnCreate($reactable)
