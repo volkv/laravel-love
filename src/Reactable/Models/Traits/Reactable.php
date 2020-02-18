@@ -77,7 +77,7 @@ trait Reactable
         ]);
 
         $this->setAttribute('love_reactant_id', $reactant->getId());
-        $this->save();
+
     }
 
     public function scopeWhereReactedBy(
