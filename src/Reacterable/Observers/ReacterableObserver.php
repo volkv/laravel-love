@@ -17,7 +17,7 @@ use Cog\Contracts\Love\Reacterable\Models\Reacterable as ReacterableContract;
 
 final class ReacterableObserver
 {
-    public function created(
+    public function creating(
         ReacterableContract $reacterable
     ): void {
         if ($this->shouldRegisterAsReacterOnCreate($reacterable)
